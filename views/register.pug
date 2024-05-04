@@ -1,0 +1,23 @@
+extends layout.pug
+block content
+  .container
+    .row.justify-content-center
+      .col-md-8
+        if error
+          .alert.alert-warning= error
+        .card
+          .card-header Register
+          .card-body
+            form.form-horizontal(method='post' action='/register')
+              .mb-3
+                label.form-label.control-label(for='name') Name
+                input#name.form-control(type='text' name='name')
+              .mb-3
+                label.form-label.control-label(for='email') E-mail
+                input#email.form-control(type='email' name='email')
+              .mb-3
+                label.form-label.control-label(for='password') Password
+                input#password.form-control(type='password' name='password')
+              .mb-3.py-3
+                button.btn.btn-primary.login-button(type='submit') Register
+                a(href='/login').ps-2 Login
