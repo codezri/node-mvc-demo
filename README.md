@@ -1,4 +1,6 @@
-# node-mvc-demo
+# node-mvc-
+
+![](./media/preview.gif)
 A sample Node.js MVC web app creating using  Express, Pug, Passport.js, bcryptjs, and Sequelize.js (SQLite)
 
 ## How to run this project?
@@ -18,7 +20,7 @@ npm start
 yarn start
 ```
 
-Visit `localhost:8080` from your web browser. 
+Visit `localhost:8080` from your web browser.
 
 ## Credits
 This project was created based on the [bigpreshy/mvc](https://github.com/bigpreshy/mvc) repository
